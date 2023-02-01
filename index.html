@@ -1,9 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Projects in progress</title>
-    </head>
-    <body>
-        Hello world
-    </body>
+  <head lang="en">
+    <title>Projects in progress</title>
+    <style>
+      img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        transition: transform 0.5s ease;
+      }
+
+      img:hover {
+        transform: scale(1.1);
+      }
+
+      .username {
+        font-weight: bold;
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        border: 1px solid #cccccc;
+        border-radius: 10px;
+        padding: 16px;
+        width: fit-content;
+      }
+
+      .layout-center {
+        display: flex;
+        justify-content: center;
+        padding: 3rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout-center">
+        <div class="card">
+            <img src="images/test.jpeg" alt="" />
+    
+            <div>
+                <p class="username">@mattbeckett</p>
+                <p>Hello world</p>
+            </div>
+        </div>
+    </div>
+  </body>
 </html>
